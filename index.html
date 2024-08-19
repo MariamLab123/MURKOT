@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MURKOT</title>
+<style>
+    *{
+        border:0;
+        margin:0;
+        text-decoration:none;
+        font-family:sans-serif;
+    }
+    body{
+        background-color:azure;
+    }
+    .lab{
+        background-color:burlywood;
+        width:100%;
+        height:auto;
+    }
+    .con{
+        position:fixed;
+        width:100%;
+        height:auto;
+    }
+    .nav{
+        width:90%;
+        height:auto;
+        padding:10px;
+        background-color:cadetblue;
+        border-radius:20px;
+    }
+    .fk{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .p{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(16, 3, 46);
+    }
+    .btn{
+        background-color:chocolate;
+        font-size:20px;
+        border-radius:10px;
+        animation-name:moda;
+        animation-duration:3s;
+    }
+    @keyframes moda{
+        from{}
+        to{background-color:rgb(5, 2, 49);color:white;font-size:30px;border-radius:30px;}
+    }
+    .fk{
+        font-family:monospace;
+    }
+    .fu{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .blend{
+        font-size:30px;
+    }
+    .dot{
+        background-color:burlywood;
+        width:85%;
+        height:auto;
+        padding:10px;
+        border-radius:20px;
+        margin:10px;
+    }
+    .q{
+        background-color:cadetblue;
+        width:80%;
+        height:auto;
+        padding:5px;
+        border-radius:15px;
+    }
+    .y{
+        display:none;
+    }
+    .n{
+        display:none;
+    }
+    .y2{
+        display:none;
+    }
+    .n2{
+        display:none;
+    }
+    .y3{
+        display:none;
+    }
+    .n3{
+        display:none;
+    }
+    .let{
+        background-color:burlywood;
+        width:100%;
+        height:auto;
+        position:fixed;
+    }
+    .q1{
+        display:none;
+    }
+    .q2{
+        display:none;
+    }
+    .q3{
+        display:none;
+    }
+</style>
+</head>
+<body>
+    <div class="all">
+    <center>
+    <div class="con"><div class="lab"><font color="darkblue" size="50px"><b>MURKOT</b></font></div></div>
+    <h1>fffff</h1>
+    <h1>m</h1>
+    <div class="nav">
+    <center>
+        <h2 class="fk">Food and Kitchen</h2>
+        <h1 style="height:10px;"></h1>
+        <p class="p">Questions about food, cooking and things related to the kitchen</p>
+        <h1 style="height:10px;"></h1>
+        <h1 style="height:10px;"></h1>
+        <button class="btn" onclick="q1()">Start</button>
+    </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+        <h2 class="fg">Video Games</h2> 
+        <h1 style="height:10px;"></h1>
+        <p class="p">Questions about video and computer games</p>
+        <h1 style="height:10px;"></h1>
+        <h1 style="height:10px;"></h1>
+        <button class="btn" onclick="q2()">Start</button>
+      </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <div class="nav">
+        <center>
+            <h2 class="fu">Seas and oceans</h2>
+            <h1 style="height:10px;"></h1>
+            <p class="p">Questions about the depths of oceans and seas</p>
+            <h1 style="height:10px;"></h1>
+            <h1 style="height:10px;"></h1>
+            <button class="btn" onclick="q3()">Start</button>
+        </center>
+    </div>
+    <h1 style="height:50px;"></h1>
+    <font color="blue" class="blend">Wait the next update for more...</font>
+    </center>
+    </div>
+    <center>
+    <div class="q1">
+      <center>
+        <div class="let">
+            <font class="y" color="green" size="10px">Correct answer</font>
+            <font class="n" color="red" size="10px">Bad answer</font>
+        </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>What is the Egyptian food below?</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">Hamburger</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">Bsilla</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes()">Koshary</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no()">Batates</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>What is the most commonly used liquid in cooking?</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">Water</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">Milk</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">Spices</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">Cooking Oil</button>
+            <h1 style="height:10px;"></h1>
+        </div>
+      </center>
+      <center>
+        <div class="dot">
+            <h2>What is cauliflower?</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">Vegetables</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">Fruits</button>
+        </div>
+      </center>
+      <center>
+        <div class="dot">
+            <h2>What is the percentage that makes tea drinkable?</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">1-2% concentration</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes()">2-3% concentration</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no()">3-4% concentration</button>
+        </div>
+      </center>
+      <h1 style="height:10px;"></h1>
+    <h1 style="height:10px;"></h1>
+    <h1 style="height:10px;"></h1>
+    <button class="btn" onclick="q1o()">Close</button>
+    </div>
+    
+    </center>
+    <center>
+        <div class="q2">
+            <div class="let">
+                <font class="y2" color="green" size="10px">Correct answer</font>
+                <font class="n2" color="red" size="10px">Bad answer</font>
+            </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>What is the first Spider-Man game?</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes2()">Spider-Man: The Video Game</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">Spider-Man one1</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">Man of Spider</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no2()">Spider-Man two2</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>What is the most famous computer game in the world?</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">Roblox</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">Among Us</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes2()">Minecraft</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no2()">Level Devil</button>
+            <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>Who is the most famous person who created a game?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Mark Jan</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">Shigeru Miyamoto</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Lio Mertins</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Dodal Bork</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>Who is the most famous YouTuber who has gaming content?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Gaming X</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">GameLoop</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Block Atom</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">PewDiePie</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>What is the most popular game in Egypt in 2020?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes2()">Among Us</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Level Devil</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Roblox</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no2()">Super Mario</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <button class="btn" onclick="q2o()">Close</button>
+        </div>
+        <div class="q3">
+            <div class="let">
+                <font class="y3" color="green" size="10px">Correct answer</font>
+                <font class="n3" color="red" size="10px">Bad answer</font>
+            </div>
+        <h1>fffff</h1>
+        <h1>m</h1>
+        <h1 style="height:10px;"></h1>
+        <div class="dot">
+        <h2>What is the largest creature in the ocean?</h2>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="yes3()">Blue Whale</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">Fin Whale</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">Whale Shark</button>
+        <h1 style="height:10px;"></h1>
+        <button class="q" onclick="no3()">Sperm Whale</button>
+        <h1 style="height:10px;"></h1>
+        </div>
+        <div class="dot">
+            <h2>What is a salamander?</h2>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">Fish</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="yes3()">Amphibian</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">Whale</button>
+            <h1 style="height:10px;"></h1>
+            <button class="q" onclick="no3()">Sperm</button>
+            <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>What is the difference between a sea and an ocean?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">Seas are partially enclosed by land</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Seas are smaller than oceans</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Seas are cover 71% of surface</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Seas are open bodies of saltwate</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <div class="dot">
+                <h2>Are there fish that are not eaten?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">No</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">Yes</button>
+            </div>
+            <div class="dot">
+                <h2>What creatures live on beaches?</h2>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Giant Squid</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Corals</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="yes3()">Crabs</button>
+                <h1 style="height:10px;"></h1>
+                <button class="q" onclick="no3()">Deep-Sea Fish</button>
+                <h1 style="height:10px;"></h1>
+            </div>
+            <button class="btn" onclick="q3o()">Close</button>
+        </div>
+    </center>
+    <script>
+        let all = document.getElementsByClassName("all")[0];
+        let q1b = document.getElementsByClassName("q1")[0];
+        let yesy = document.getElementsByClassName("y")[0];
+        let non = document.getElementsByClassName("n")[0];
+        let yesy2 = document.getElementsByClassName("y2")[0];
+        let non2 = document.getElementsByClassName("n2")[0];
+        let q2b = document.getElementsByClassName("q2")[0];
+        let yesy3 = document.getElementsByClassName("y3")[0];
+        let non3 = document.getElementsByClassName("n3")[0];
+        let q3b = document.getElementsByClassName("q3")[0];
+        function q1(){
+         all.style.display="none";
+         q1b.style.display="block";
+        }
+        function q1o(){
+            all.style.display="block";
+            q1b.style.display="none";
+        }
+        function no(){
+            yesy.style.display="none";
+            non.style.display="block";
+        }
+        function yes(){
+            yesy.style.display="block";
+            non.style.display="none";
+        }
+        function no2(){
+            yesy2.style.display="none";
+            non2.style.display="block";
+        }
+        function yes2(){
+            yesy2.style.display="block";
+            non2.style.display="none";
+        }
+        function q2(){
+            all.style.display="none";
+            q2b.style.display="block";
+        }
+        function q2o(){
+            all.style.display="block";
+            q2b.style.display="none";
+        }
+        function no3(){
+            yesy3.style.display="none";
+            non3.style.display="block";
+        }
+        function yes3(){
+            yesy3.style.display="block";
+            non3.style.display="none";
+        }
+        function q3(){
+            all.style.display="none";
+            q3b.style.display="block";
+        }
+        function q3o(){
+            all.style.display="block";
+            q3b.style.display="none";
+        }
+    </script>
+</body>
+</html>
